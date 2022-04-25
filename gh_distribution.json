@@ -24,7 +24,6 @@
                 "largeImageKey": "server-prod"
             },
             "mainServer": false,
-            
             "autoconnect": true,
             "modules": [
                 {
@@ -241,12 +240,22 @@
                 },
                 {
                     "id": "com.westeroscraft:westerosblocks:4.2.1-111",
-                    "name": "WesterosBlocks",
+                    "name": "Galacticraft",
                     "type": "ForgeMod",
                     "artifact": {
                         "size": 18288340,
                          "MD5": "e64fd359d928b7c8e6a8f4e1ceebe230",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.12.2/mods/WesterosBlocks.jar"
+                        "url": "https://github.com/Ghalib-craftLeProgrammeur/Mods/raw/main/Galacticraft-1.12.2-4.0.2.284.jar"
+                    }
+                },
+                {   
+                    "id": "customNpc:4.2.1-111",
+                    "name": "CustomNPC",
+                    "type": "ForgeMod",
+                    "artifact": {
+                        "size": 18288340,
+                         "MD5": "e64fd359d928b7c8e6a8f4e1ceebe230",
+                        "url": "https://github.com/Ghalib-craftLeProgrammeur/Mods/raw/main/CustomNPCs_1.12.2-(05Jul20).jar"
                     }
                 },
                 {
@@ -453,11 +462,11 @@
             "description": "Tests for our version change to 1.12.2 are live here.",
             "icon": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/server-test.png",
             "version": "4.6.5",
-            "address": "mc.westeroscraft.com:4445",
+            "address": "orampia.mine.fun:25635",
             "minecraftVersion": "1.12.2",
             "discord": {
                 "shortId": "1.12.2 Test Server",
-                "largeImageText": "WesterosCraft 1.12.2 Test Server",
+                "largeImageText": "Earth block 1.12.2 Test Server",
                 "largeImageKey": "server-test"
             },
             "mainServer": false,

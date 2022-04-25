@@ -522,7 +522,7 @@ exports.Types = {
     VersionManifest: 'VersionManifest'
 }
 
-let DEV_MODE = false
+let DEV_MODE = true
 
 const DISTRO_PATH = path.join(ConfigManager.getLauncherDirectory(), 'distribution.json')
 const DEV_PATH = path.join(ConfigManager.getLauncherDirectory(), 'dev_distribution.json')
@@ -575,6 +575,7 @@ exports.pullRemote = function(){
  * @returns {Promise.<DistroIndex>}
  */
 exports.pullLocal = function(){
+    console.log("DEV distributions: ", DEV_PATH)
     return new Promise((resolve, reject) => {
         fs.readFile(DEV_MODE ? DEV_PATH : DISTRO_PATH, 'utf-8', (err, d) => {
             if(!err){

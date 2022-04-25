@@ -1,0 +1,72 @@
+{
+    "settings": {
+        "java": {
+            "minRAM": "4G",
+            "maxRAM": "4G",
+            "executable": "",
+            "jvmOptions": [
+                "-XX:+UseConcMarkSweepGC",
+                "-XX:+CMSIncrementalMode",
+                "-XX:-UseAdaptiveSizePolicy",
+                "-Xmn128M"
+            ]
+        },
+        "game": {
+            "resWidth": 1280,
+            "resHeight": 720,
+            "fullscreen": false,
+            "autoConnect": true,
+            "launchDetached": true
+        },
+        "launcher": {
+            "allowPrerelease": false,
+            "dataDirectory": "/Users/lezzarwl/Library/Application Support/.helioslauncher"
+        }
+    },
+    "newsCache": {
+        "date": null,
+        "content": null,
+        "dismissed": false
+    },
+    "clientToken": null,
+    "selectedServer": "WesterosCraft-1.12.2",
+    "selectedAccount": "71e9ea414efe4a38abb9b20d1513afcd",
+    "authenticationDatabase": {
+        "71e9ea414efe4a38abb9b20d1513afcd": {
+            "type": "microsoft",
+            "accessToken": "eyJhbGciOiJIUzI1NiJ9.eyJ4dWlkIjoiMjUzNTQ1NjIzMDM4MzAyMyIsImFnZyI6IkFkdWx0Iiwic3ViIjoiNzdkMjk1NDUtMTE5Ny00ZjM0LTgzM2ItYmEwODE3MGRlN2IxIiwibmJmIjoxNjUwOTA5OTk4LCJhdXRoIjoiWEJPWCIsInJvbGVzIjpbXSwiaXNzIjoiYXV0aGVudGljYXRpb24iLCJleHAiOjE2NTA5OTYzOTgsImlhdCI6MTY1MDkwOTk5OCwicGxhdGZvcm0iOiJVTktOT1dOIiwieXVpZCI6IjgwMjUwNjhlMTUxNzJhYWFkOWQxN2U4ZGQ0ZTg5MzZkIn0.cFiixTjT1zlZHPVOl87gbi78BfTZVla8-kk8UXFik_U",
+            "username": "Ghalib_craft",
+            "uuid": "71e9ea414efe4a38abb9b20d1513afcd",
+            "displayName": "Ghalib_craft",
+            "expiresAt": 1650996389159,
+            "microsoft": {
+                "access_token": "EwAgA+pvBAAUKods63Ys1fGlwiccIFJ+qE1hANsAAbvLDXQuhseYScXez39fmvJ4dSk5po1NSCNfEGwI0xy2ZdDKehjNdIPySvvEL2bDGsDICLPBCYmRm0hbuoJ20XZtG5OINjOGvMm1CmsL0+dHn7QE6TaJQ69cIypH0inhbzm3X8e0SSri1sB/FZrbFPzWke4JTr/oYjXV2QyoHgep8nOw7zfxWaYywdwSF2RrMRsZjsRGOVSPz8/8B07usHIr1xiR8b/zcU3H9cXPHlNAI/2rEYOHkIwgyg5/806Sbo/iSvNOZMivJNfSp7L+z/1z8annh2TwownZNbNbvbV4fV2riL9WNm+wHGKQmnG9c9JFgRGRDj83QIk6eYSzhVUDZgAACOQTf/rHeqzG8AFOWaChMT7+u+ulRkTVr9IrM0Y1SIrXZZbguEJCEFLr6VQa+NP3a72bqbou3tQRK6UG3rm/3XftPwi22nTDDi0wHhclStfP0fwRzM/IF/SqdHzYhq3dJ4RBINacLVQ9eyCMw/a1XWgsY/6eRw0VE+iknrS9Q5HtWe6TGOgTQyDH5TbmwXakhP2sBrLAqvh/JjCAmTVNWDJPVEgre0Og87JYH0ve3SFkZy9kHVk1FLSI7oDUnkAkoZdVoKS2K2Z+0kc53q9RYi0sRV3teUWTOyDx5Sduks5LDTB/9mp0WEDPkNh66xVXnEVWZ4HFfx/WXea+QfoTAnwfNIafCWg16crsAZy6iQ7Hftzgt7gZC9d5pppuJbEOFLCgYJoLYdvxxk6mELO+8RlQAdELEyBLddX6kUsT/JHclaDY87PuT7erLJudqcFyPHUi1P3Wn+nH3i/VMfgdDENCFvMzJyN7QuHueB+WGdCnnpkZgaozmLwWzB14JsAjPJptrkzORgdk67wFEM++Xi1uEawmhz+HmD+aBOQ0PqDZOJyZuhFk4Uuo6uTTsOBFVcipaaoGZZhfIPy04Obe83QqQavOEJtuJWLIzaS6RBS8+GSYlhhZZp2a+ymrQhVKrAQebkEwTI8BR2wIWKI73KCDU/i2WI+D7EcLJQI=",
+                "refresh_token": "M.R3_BL2.-CQTQD7hfuXtH35EwF4YGOHMkU28NE7Ewdz36!s6vEsRU6I1u7qKf7WcM2yI6xSkSkSQtUWCRuonh5s3QOMPnP8S76hxX2R3HiukxflF3oUIEMeH0m551TEsioFSNn8GkKTjavhHBWj!EdxaMRnKOOxKGIItzWRi8w17enPoG9*lJF4RQa9Ok4nELK8kEFm8SgG3H71RRuo1moDs*RUsBfIZShs2Q1ihXMKPg5O7jNA1sjVYh9E66wC26gsmhWCAC7!2C2Yy4hOU!abuI!9i7REEEEdf3ZKtSDVhyub0yptSnlYpapzQ8aBlwtjekFaWy1w$$",
+                "expires_at": 1650913589159
+            }
+        }
+    },
+    "modConfigurations": [
+        {
+            "id": "WesterosCraft-1.12.2",
+            "mods": {
+                "org.blockartistry:dynsurround": true,
+                "octarine-noise:betterfoliage": true,
+                "xaeros:minimap": true,
+                "com.github.hexomod:worldedit-cui-fe3": false,
+                "com.mumfrey:macrokeybindmod": false
+            }
+        },
+        {
+            "id": "WesterosCraftTest-1.12.2",
+            "mods": {
+                "org.blockartistry:dynsurround": true,
+                "octarine-noise:betterfoliage": true,
+                "xaeros:minimap": true,
+                "com.github.hexomod:worldedit-cui-fe3": false,
+                "com.mumfrey:macrokeybindmod": false,
+                "com.theincgi:advancedMacros": false
+            }
+        }
+    ]
+}
