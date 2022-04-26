@@ -866,7 +866,7 @@ class JavaGuard extends EventEmitter {
         let jHome = JavaGuard._scanJavaHome()
         if(jHome != null){
             // Ensure we are at the absolute root.
-            if(jHome.contains('/Contents/Home')){
+            if(jHome.includes('/Contents/Home')){
                 jHome = jHome.substring(0, jHome.indexOf('/Contents/Home'))
             }
             uberSet.add(jHome)
@@ -1509,7 +1509,7 @@ class AssetGuard extends EventEmitter {
                                 return
                             }
                         }
-                        reject('No forge version manifest found!')
+                        reject(`No forge version manifest found for: ${JSON.stringify(ob)}`)
                         return
                     } else {
                         let obArtifact = ob.getArtifact()

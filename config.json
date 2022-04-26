@@ -3,7 +3,7 @@
         "java": {
             "minRAM": "4G",
             "maxRAM": "4G",
-            "executable": "",
+            "executable": "/usr/bin/java",
             "jvmOptions": [
                 "-XX:+UseConcMarkSweepGC",
                 "-XX:+CMSIncrementalMode",
@@ -15,7 +15,7 @@
             "resWidth": 1280,
             "resHeight": 720,
             "fullscreen": false,
-            "autoConnect": true,
+            "autoConnect": false,
             "launchDetached": true
         },
         "launcher": {
@@ -34,15 +34,15 @@
     "authenticationDatabase": {
         "71e9ea414efe4a38abb9b20d1513afcd": {
             "type": "microsoft",
-            "accessToken": "eyJhbGciOiJIUzI1NiJ9.eyJ4dWlkIjoiMjUzNTQ1NjIzMDM4MzAyMyIsImFnZyI6IkFkdWx0Iiwic3ViIjoiNzdkMjk1NDUtMTE5Ny00ZjM0LTgzM2ItYmEwODE3MGRlN2IxIiwibmJmIjoxNjUwOTA5OTk4LCJhdXRoIjoiWEJPWCIsInJvbGVzIjpbXSwiaXNzIjoiYXV0aGVudGljYXRpb24iLCJleHAiOjE2NTA5OTYzOTgsImlhdCI6MTY1MDkwOTk5OCwicGxhdGZvcm0iOiJVTktOT1dOIiwieXVpZCI6IjgwMjUwNjhlMTUxNzJhYWFkOWQxN2U4ZGQ0ZTg5MzZkIn0.cFiixTjT1zlZHPVOl87gbi78BfTZVla8-kk8UXFik_U",
+            "accessToken": "eyJhbGciOiJIUzI1NiJ9.eyJ4dWlkIjoiMjUzNTQ1NjIzMDM4MzAyMyIsImFnZyI6IkFkdWx0Iiwic3ViIjoiNzdkMjk1NDUtMTE5Ny00ZjM0LTgzM2ItYmEwODE3MGRlN2IxIiwibmJmIjoxNjUwOTgzMzQwLCJhdXRoIjoiWEJPWCIsInJvbGVzIjpbXSwiaXNzIjoiYXV0aGVudGljYXRpb24iLCJleHAiOjE2NTEwNjk3NDAsImlhdCI6MTY1MDk4MzM0MCwicGxhdGZvcm0iOiJVTktOT1dOIiwieXVpZCI6IjgwMjUwNjhlMTUxNzJhYWFkOWQxN2U4ZGQ0ZTg5MzZkIn0.5HS5t5jwPkXUPThKNK-VNAuBDR57BFiCn-K6Eqqxe9s",
             "username": "Ghalib_craft",
             "uuid": "71e9ea414efe4a38abb9b20d1513afcd",
             "displayName": "Ghalib_craft",
-            "expiresAt": 1650996389159,
+            "expiresAt": 1651069730911,
             "microsoft": {
-                "access_token": "EwAgA+pvBAAUKods63Ys1fGlwiccIFJ+qE1hANsAAbvLDXQuhseYScXez39fmvJ4dSk5po1NSCNfEGwI0xy2ZdDKehjNdIPySvvEL2bDGsDICLPBCYmRm0hbuoJ20XZtG5OINjOGvMm1CmsL0+dHn7QE6TaJQ69cIypH0inhbzm3X8e0SSri1sB/FZrbFPzWke4JTr/oYjXV2QyoHgep8nOw7zfxWaYywdwSF2RrMRsZjsRGOVSPz8/8B07usHIr1xiR8b/zcU3H9cXPHlNAI/2rEYOHkIwgyg5/806Sbo/iSvNOZMivJNfSp7L+z/1z8annh2TwownZNbNbvbV4fV2riL9WNm+wHGKQmnG9c9JFgRGRDj83QIk6eYSzhVUDZgAACOQTf/rHeqzG8AFOWaChMT7+u+ulRkTVr9IrM0Y1SIrXZZbguEJCEFLr6VQa+NP3a72bqbou3tQRK6UG3rm/3XftPwi22nTDDi0wHhclStfP0fwRzM/IF/SqdHzYhq3dJ4RBINacLVQ9eyCMw/a1XWgsY/6eRw0VE+iknrS9Q5HtWe6TGOgTQyDH5TbmwXakhP2sBrLAqvh/JjCAmTVNWDJPVEgre0Og87JYH0ve3SFkZy9kHVk1FLSI7oDUnkAkoZdVoKS2K2Z+0kc53q9RYi0sRV3teUWTOyDx5Sduks5LDTB/9mp0WEDPkNh66xVXnEVWZ4HFfx/WXea+QfoTAnwfNIafCWg16crsAZy6iQ7Hftzgt7gZC9d5pppuJbEOFLCgYJoLYdvxxk6mELO+8RlQAdELEyBLddX6kUsT/JHclaDY87PuT7erLJudqcFyPHUi1P3Wn+nH3i/VMfgdDENCFvMzJyN7QuHueB+WGdCnnpkZgaozmLwWzB14JsAjPJptrkzORgdk67wFEM++Xi1uEawmhz+HmD+aBOQ0PqDZOJyZuhFk4Uuo6uTTsOBFVcipaaoGZZhfIPy04Obe83QqQavOEJtuJWLIzaS6RBS8+GSYlhhZZp2a+ymrQhVKrAQebkEwTI8BR2wIWKI73KCDU/i2WI+D7EcLJQI=",
-                "refresh_token": "M.R3_BL2.-CQTQD7hfuXtH35EwF4YGOHMkU28NE7Ewdz36!s6vEsRU6I1u7qKf7WcM2yI6xSkSkSQtUWCRuonh5s3QOMPnP8S76hxX2R3HiukxflF3oUIEMeH0m551TEsioFSNn8GkKTjavhHBWj!EdxaMRnKOOxKGIItzWRi8w17enPoG9*lJF4RQa9Ok4nELK8kEFm8SgG3H71RRuo1moDs*RUsBfIZShs2Q1ihXMKPg5O7jNA1sjVYh9E66wC26gsmhWCAC7!2C2Yy4hOU!abuI!9i7REEEEdf3ZKtSDVhyub0yptSnlYpapzQ8aBlwtjekFaWy1w$$",
-                "expires_at": 1650913589159
+                "access_token": "EwAgA+pvBAAUKods63Ys1fGlwiccIFJ+qE1hANsAAdux6j8HNVGjRFsQq4pQYzosJWa7miZ3S67Rzmj0//6dT+/8WjaX6I5UCW96sIFRB5qhcC4UwQLLrRUOUGexFZUxrOUCsG0uPxLgCoeDVrVoauxnmcDAtBKbnaFvHD6QjObcHA0Xr/7Rsz2B2csLqngyrpzQB7ZoHoGuQISXTrdmGy0skLHD5Kq1hpZskjeGtxXVKpY78pSpqP7IthIczqnj7UIIQ/xsv5uoCAS2dkRkb5MaIHNXrjMtzdMPCqXbIYM4RS2YYT9K+Uw4U5ZTxc+e23uL7I+JNgiVv/236ZapDJFdgCJ5r6rpdVnKTT4E/iw4VdqXjGJsVBoT2weUqoMDZgAACKtce2FqHD+I8AFdcTC1ShKvJhMa+cp7TZKdMeTVY5RqEqmbJZ2ZzMsxL2z9CbMwvoEMfWE5os6nK1IlxdFJsPin2Mrsp6X16RiZyct0law2gjfVcBwfn3d0tMWGaeNaaiV/x0cgrNF1Omb9IwZJZU2LfsVIHpOsRMS1Y3VOwPgE3M3Ya9IbJ11YcBPBJ8XMMFfWzw95jtqy4ir+U6JZXz6+4ugvq0peZawSHoV93Bn4Y2DtfSlXS0mldvSWs+BHM4bspSP9jEKBaXk6n/Cl17iWdPCe/RK0PC6njzsco7NwsKdVt70W6elm4IWzL5b7o9ErhKt/oIr+9UXIxXuF64kc9O5BUPkxPTAC4Z1tEd2smn259SxS9s/pIBA71i1eCLhIVPb2AxB0S4LKi6QkTvlSvS2W+HXXESRRl7C827r4WocGLHxIv1h14A3a7mvYtqtYFQj7PY31ndS7VgoSpsntsPxDXcbU1ndyjo6u4zzfL4fShwKslEsQsBu7W3ci3oqXChvduJyGsCX5Uh5vdI2OCHnBeoU+1u9DBWSmJB3Xm9jh6sjpPO4rKWSqqQYZQWnA+SOc3o84spCy7CDs8udm9MlHH/xJaCQLTBtm8/vDIyVN5CHByq4AYsXgLSEjwb/uf6XXaJvKe1Lk4/5/p9kZ/kLHF1KtqnNHJQI=",
+                "refresh_token": "M.R3_BL2.-CRZnOI!fCNVyPWN741GE9zZsB!z5UFraEDJLNsTs*EFatgJ1MVFKOWeJEgPlbRWwJ!BWu5R2FogJcCM4YpZzgBx99KXypyFWyHHLIQ8tgx6BIfGwlgSIpOoh!8b7qwuzGC92BmHRyWJEbqo8MW3E56fFypSWW9CZN6NN!88Q470Dohe!qgE3TTuD6OFcEAALIzDymHOV0BeLDhKpV3D8QD4SKdYEEJuoF*scmo3eEZ3Wz6Rclp*bslsOq2EZ3UjOGp5!obqrvrhP8pPu4QwYtHqp90P6ICY8USQ9yDUvoSH5bvDOaiUSS85TtmmfX1KPDQ$$",
+                "expires_at": 1650986930911
             }
         }
     },
@@ -50,9 +50,9 @@
         {
             "id": "WesterosCraft-1.12.2",
             "mods": {
-                "org.blockartistry:dynsurround": true,
-                "octarine-noise:betterfoliage": true,
-                "xaeros:minimap": true,
+                "org.blockartistry:dynsurround": false,
+                "octarine-noise:betterfoliage": false,
+                "xaeros:minimap": false,
                 "com.github.hexomod:worldedit-cui-fe3": false,
                 "com.mumfrey:macrokeybindmod": false
             }

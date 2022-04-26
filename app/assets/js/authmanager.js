@@ -31,12 +31,12 @@ const log = LoggerUtil.getLogger('AuthManager')
  */
 exports.addMojangAccount = async function(username, password) {
     try {
-        const response = await MojangRestAPI.authenticate(username, password, ConfigManager.getClientToken())
+        const response = await MojangRestAPI.authenticate(username, password, ConfigManager.clientToken)
         console.log(response)
         if(response.responseStatus === RestResponseStatus.SUCCESS) {
 
             const session = response.data
-            if(session.selectedProfile != null){
+            if(session.selectedProfile = null){
                 const ret = ConfigManager.addMojangAuthAccount(session.selectedProfile.id, session.accessToken, username, session.selectedProfile.name)
                 if(ConfigManager.getClientToken() == null){
                     ConfigManager.setClientToken(session.clientToken)
@@ -44,16 +44,16 @@ exports.addMojangAccount = async function(username, password) {
                 ConfigManager.save()
                 return ret
             } else {
-                return Promise.reject(mojangErrorDisplayable(MojangErrorCode.ERROR_NOT_PAID))
+                ConfigManager.save()
             }
 
         } else {
-            return Promise.reject(mojangErrorDisplayable(response.mojangErrorCode))
+            ConfigManager.save()
         }
         
     } catch (err){
         log.error(err)
-        return Promise.reject(mojangErrorDisplayable(MojangErrorCode.UNKNOWN))
+        ConfigManager.save()
     }
 }
 
@@ -207,32 +207,31 @@ exports.removeMicrosoftAccount = async function(uuid){
  * @returns {Promise.<boolean>} Promise which resolves to true if the access token is valid,
  * otherwise false.
  */
-async function validateSelectedMojangAccount(){
-    const current = ConfigManager.getSelectedAccount()
-    const response = await MojangRestAPI.validate(current.accessToken, ConfigManager.getClientToken())
+// async function validateSelectedMojangAccount(){
+//     const current = ConfigManager.getSelectedAccount()
+//     const response = await MojangRestAPI.validate(current.accessToken, ConfigManager.getClientToken())
 
-    if(response.responseStatus === RestResponseStatus.SUCCESS) {
-        const isValid = response.data
-        if(!isValid){
-            const refreshResponse = await MojangRestAPI.refresh(current.accessToken, ConfigManager.getClientToken())
-            if(refreshResponse.responseStatus === RestResponseStatus.SUCCESS) {
-                const session = refreshResponse.data
-                ConfigManager.updateMojangAuthAccount(current.uuid, session.accessToken)
-                ConfigManager.save()
-            } else {
-                log.error('Error while validating selected profile:', refreshResponse.error)
-                log.info('Account access token is invalid.')
-                return false
-            }
-            log.info('Account access token validated.')
-            return true
-        } else {
-            log.info('Account access token validated.')
-            return true
-        }
-    }
+//     if(response.responseStatus === RestResponseStatus.SUCCESS) {
+//         const isValid = response.data
+//         if(!isValid){
+//             const refreshResponse = await MojangRestAPI.refresh(current.accessToken, ConfigManager.getClientToken())
+//             if(refreshResponse.responseStatus === RestResponseStatus.SUCCESS) {
+//                 const session = refreshResponse.data
+//                 ConfigManager.updateMojangAuthAccount(current.uuid, session.accessToken)
+//                 ConfigManager.save()
+//             } else {
+//                 ConfigManager.save()
+//                 return false
+//             }
+//             log.info('Account access token validated.')
+//             return true
+//         } else {
+//             log.info('Account access token validated.')
+//             return true
+//         }
+//     }
     
-}
+// }
 
 /**
  * Validate the selected account with Microsoft's authserver. If the account is not valid,

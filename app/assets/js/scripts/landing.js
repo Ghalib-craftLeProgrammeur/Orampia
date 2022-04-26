@@ -97,8 +97,9 @@ document.getElementById('launch_button').addEventListener('click', function(e){
         setLaunchPercentage(0, 100)
 
         const jg = new JavaGuard(mcVersion)
+        console.log(`Found java executable: ${jExe}`)
         jg._validateJavaBinary(jExe).then((v) => {
-            loggerLanding.log('Java version meta', v)
+            loggerLanding.log('Java version meta', JSON.stringify(v))
             if(v.valid){
                 dlAsync()
             } else {
@@ -325,7 +326,7 @@ function asyncSystemScan(mcVersion, launchAfter = true){
                 // Show this information to the user.
                 setOverlayContent(
                     'No Compatible<br>Java Installation Found',
-                    'In order to join WesterosCraft, you need a 64-bit installation of Java 8. Would you like us to install a copy?',
+                    'In order to join Earth Block, you need a 64-bit installation of Java 8. Would you like us to install a copy?',
                     'Install Java',
                     'Install Manually'
                 )
@@ -633,9 +634,7 @@ function dlAsync(login = true){
 
             // If these properties are not defined it's likely an error.
             if(m.result.forgeData == null || m.result.versionData == null){
-                loggerLaunchSuite.error('Error during validation:', m.result)
-
-                loggerLaunchSuite.error('Error during launch', m.result.error)
+                loggerLaunchSuite.error('Error during validation:', JSON.stringify(m.result))
                 showLaunchFailure('Error During Launch', 'Please check the console (CTRL + Shift + i) for more details.')
 
                 allGood = false

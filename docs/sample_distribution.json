@@ -249,7 +249,7 @@
                     }
                 },
                 {
-                    "id": "customNpc:4.2.1-111",
+                    "id": "customNpc:customNpc:14.31.311",
                     "name": "CustomNPC",
                     "type": "ForgeMod",
                     "artifact": {
@@ -462,7 +462,7 @@
             "description": "Tests for our version change to 1.12.2 are live here.",
             "icon": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/server-test.png",
             "version": "4.6.5",
-            "address": "orampia.mine.fun:25635",
+            "address": "46.105.48.133:25635",
             "minecraftVersion": "1.12.2",
             "discord": {
                 "shortId": "1.12.2 Test Server",

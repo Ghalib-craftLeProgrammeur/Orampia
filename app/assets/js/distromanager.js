@@ -529,15 +529,20 @@ const DEV_PATH = path.join(ConfigManager.getLauncherDirectory(), 'dev_distributi
 
 let data = null
 
+async function sleep(waitInMillis) {
+    return new Promise((resolve) => setTimeout(resolve, waitInMillis));
+}
+
 /**
  * @returns {Promise.<DistroIndex>}
  */
-exports.pullRemote = function(){
+exports.pullRemote = async () => {    
     if(DEV_MODE){
-        return exports.pullLocal()
+        await sleep(2000)
+        return await exports.pullLocal()
     }
-    return new Promise((resolve, reject) => {
-        const distroURL = 'http://mc.westeroscraft.com/WesterosCraftLauncher/distribution.json'
+    const promise = new Promise((resolve, reject) => {
+          const distroURL = 'https://gist.githubusercontent.com/Ghalib-craftLeProgrammeur/6715e04b242c39df8372b77ee847f172/raw/'
         //const distroURL = 'https://gist.githubusercontent.com/dscalzi/53b1ba7a11d26a5c353f9d5ae484b71b/raw/'
         const opts = {
             url: distroURL,
@@ -569,6 +574,8 @@ exports.pullRemote = function(){
             }
         })
     })
+
+    return await promise;
 }
 
 /**
@@ -581,11 +588,10 @@ exports.pullLocal = function(){
             if(!err){
                 data = DistroIndex.fromJSON(JSON.parse(d))
                 resolve(data)
-                return
             } else {
                 reject(err)
-                return
             }
+            return
         })
     })
 }

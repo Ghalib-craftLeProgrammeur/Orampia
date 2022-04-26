@@ -16,16 +16,15 @@
             "description": "New 1.12.2 production server.",
             "icon": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/server-prod.png",
             "version": "4.6.5",
-            "address": "mc.westeroscraft.com:25565",
+            "address": "46.105.48.133:25635",
             "minecraftVersion": "1.12.2",
             "discord": {
                 "shortId": "1.12.2 Production Server",
-                "largeImageText": "WesterosCraft 1.12.2 Production Server",
+                "largeImageText": "Earth-Block 1.12.2 Production Server",
                 "largeImageKey": "server-prod"
             },
             "mainServer": false,
-            
-            "autoconnect": true,
+            "autoconnect": false,
             "modules": [
                 {
                     "id": "net.minecraftforge:forge:1.12.2-14.23.5.2847",
@@ -241,12 +240,22 @@
                 },
                 {
                     "id": "com.westeroscraft:westerosblocks:4.2.1-111",
-                    "name": "WesterosBlocks",
+                    "name": "Galacticraft",
                     "type": "ForgeMod",
                     "artifact": {
-                        "size": 18288340,
-                         "MD5": "e64fd359d928b7c8e6a8f4e1ceebe230",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.12.2/mods/WesterosBlocks.jar"
+                        "size": 15610630,
+                        "MD5": "4868362051e94c791b364508ae4daca2",
+                        "url": "https://github.com/Ghalib-craftLeProgrammeur/Mods/raw/main/Galacticraft-1.12.2-4.0.2.284.jar"
+                    }
+                },
+                {   
+                    "id": "customNpc:customNpc:14.31.311",
+                    "name": "CustomNPC",
+                    "type": "ForgeMod",
+                    "artifact": {
+                        "size": 9911871,
+                        "MD5": "3ab1a5c4b069d574631da5bc1880ebf7",
+                        "url": "https://github.com/Ghalib-craftLeProgrammeur/Mods/raw/main/CustomNPCs_1.12.2-(05Jul20).jar"
                     }
                 },
                 {
@@ -318,12 +327,14 @@
                 },
                 {
                     "id": "orelib:orelib:3.6.0.1",
-                    "name": "OreLib 3.6.0.1",
+                    "name": "Map writer 3.6.0.1",
                     "type": "ForgeMod",
                     "artifact": {
                         "size": 341728,
                         "MD5": "00cce3b240365458adcad3e77782358a",
                         "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.12.2/mods/OreLib.jar"
+                        
+                        
                     }
                 },
                 {
@@ -453,15 +464,15 @@
             "description": "Tests for our version change to 1.12.2 are live here.",
             "icon": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/server-test.png",
             "version": "4.6.5",
-            "address": "mc.westeroscraft.com:4445",
+            "address": "46.105.48.133:25635",
             "minecraftVersion": "1.12.2",
             "discord": {
                 "shortId": "1.12.2 Test Server",
-                "largeImageText": "WesterosCraft 1.12.2 Test Server",
+                "largeImageText": "Earth block 1.12.2 Test Server",
                 "largeImageKey": "server-test"
             },
             "mainServer": false,
-            "autoconnect": true,
+            "autoconnect": false,
             "modules": [
                 {
                     "id": "net.minecraftforge:forge:1.12.2-14.23.5.2847",
